@@ -1,0 +1,6 @@
+import statistics
+Data=[27,36,28,18,35,26,20,35,40,26]
+s=sorted(Data)
+median=statistics.median(s)
+print(median)
+                         
