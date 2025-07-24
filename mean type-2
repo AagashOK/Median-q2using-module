@@ -1,0 +1,18 @@
+#Get the Data
+Data=input("Enter the Data:")
+#Split and convert each value to int
+value=list(map(int,Data.split()))
+#Get the Data
+Num=input("Enter the Value:")
+#Split and convert each value to int
+Num1=list(map(int,Num.split()))
+
+#Create the empty list
+value1=[]
+#Using For loop for Mulitple the value and Num1
+for i in range(len(Num1)):
+    value1.append(value[i]*Num1[i])
+    
+#Calculate the Mean
+Mean=sum(value1)/sum(Num1)
+print("Mean:",Mean)
