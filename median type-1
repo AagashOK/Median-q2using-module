@@ -1,0 +1,11 @@
+Data=[27,36,28,18,35,26,20,35,40,26]
+s=sorted(Data)
+print(s)
+L=len(Data)
+if L % 2 == 1:
+    median = s[L// 2]
+else:
+    mid1 = s[L // 2 - 1]
+    mid2 = s[L // 2]
+    median=(mid1+mid2)/2
+print("Median:",median)
