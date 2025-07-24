@@ -1,0 +1,32 @@
+#Get the Data
+Data=input("Enter the Data:")
+#Split and convert each value to int
+value=list(map(int,Data.split()))
+#Get the Data
+Num=input("Enter the Value:")
+#Split and convert each value to int
+Num1=list(map(int,Num.split()))
+
+#Create the empty list
+CF=[]
+Value=0
+
+
+#For loop for find CF
+for Num in Num1:
+    Value +=Num
+    CF.append(Value)
+    
+#Sum the Num1
+N=sum(Num1)
+#Calculate the Median
+D=(N+1)/2
+print(D)
+
+#For loop for find th Term
+for i in range(len(CF)):
+    if D<=CF[i]:
+        Median=value[i]
+        break
+print("Median :",Median)
+
